@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "3",
+    "granim": "^1.0.6",
     "husky": "^0.14.3",
     "lint-staged": "^4.0.2",
     "prettier": "^1.5.3",
