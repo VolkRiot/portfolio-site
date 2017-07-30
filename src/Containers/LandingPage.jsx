@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import Particles from 'particlesjs';
 import Typed from 'typed.js';
 
@@ -55,11 +55,16 @@ export default class LandingPage extends Component {
         <canvas id="granim-canvas" />
         <div id="particles-js" />
         <canvas id="particles-canvas" />
-        <Col id="intro-text" md={12}>
-          <h1>
-            Hello, my name is <span id="typed-span" />
-          </h1>
-        </Col>
+        <Row>
+          <Col id="intro-text" md={12}>
+            <h1>
+              Hello, my name is <span id="typed-span" />
+            </h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={12} />
+        </Row>
       </div>
     );
   }

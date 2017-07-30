@@ -68,6 +68,5 @@ body {
 }
 
 #intro-text {
-  position: absolute;
-  top: 25%;
+  margin-top: 10%;
 }
