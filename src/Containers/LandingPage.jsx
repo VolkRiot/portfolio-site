@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Col, Jumbotron, Button } from 'react-bootstrap';
 
+import './LandingPage.style.css';
+
 import Granim from 'granim';
 
 export default class LandingPage extends Component {
@@ -23,20 +25,7 @@ export default class LandingPage extends Component {
   render() {
     return (
       <div>
-        <canvas
-          id="granim-canvas"
-          style={{
-            position: 'absolute',
-            display: 'block',
-            width: '100%',
-            height: '100%',
-            top: 0,
-            right: 0,
-            bottom: 0,
-            left: 0,
-            zIndex: -1
-          }}
-        />
+        <canvas id="granim-canvas" />
         <span>
           <p>TEST TEXT</p>
         </span>
