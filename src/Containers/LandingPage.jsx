@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import { Col, Jumbotron, Button } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import Particles from 'particlesjs';
 
 import './LandingPage.style.css';
 
 import Granim from 'granim';
 
 export default class LandingPage extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
   componentDidMount() {
     new Granim({
       element: '#granim-canvas',
@@ -21,14 +19,16 @@ export default class LandingPage extends Component {
         }
       }
     });
+    Particles.init({
+      selector: '#particles-canvas'
+    });
   }
   render() {
     return (
       <div>
         <canvas id="granim-canvas" />
-        <span>
-          <p>TEST TEXT</p>
-        </span>
+        <div id="particles-js" />
+        <canvas id="particles-canvas" />
       </div>
     );
   }
