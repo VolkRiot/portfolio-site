@@ -63,7 +63,26 @@ export default class LandingPage extends Component {
           </Col>
         </Row>
         <Row>
-          <Col md={12} />
+          <Col md={12}>
+            <a href="https://github.com/VolkRiot">
+              <i
+                className="fa fa-github fa-5x header-icon"
+                aria-hidden="true"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/mishametrikin/">
+              <i
+                className="fa fa-linkedin-square fa-5x header-icon"
+                aria-hidden="true"
+              />
+            </a>
+            <a href="https://docs.google.com/document/d/1ynr0GTDJwIdedinNCh3XagO_JC5OSBo8wOpzt5i5dEM/edit?usp=sharing">
+              <i
+                className="fa fa-handshake-o fa-5x header-icon"
+                aria-hidden="true"
+              />
+            </a>
+          </Col>
         </Row>
       </div>
     );

@@ -70,3 +70,12 @@ body {
 #intro-text {
   margin-top: 10%;
 }
+
+.header-icon {
+  margin: 4vw;
+  transition: all .3s ease-in-out;
+}
+
+.header-icon:hover {
+  transform: scale(1.3);
+}
