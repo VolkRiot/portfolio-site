@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
 import Particles from 'particlesjs';
+import Typed from 'typed.js';
 
 import './LandingPage.style.css';
 
@@ -19,9 +20,34 @@ export default class LandingPage extends Component {
         }
       }
     });
+
     Particles.init({
-      selector: '#particles-canvas'
+      selector: '#particles-canvas',
+      sizeVariations: 4,
+      speed: 0.75,
+      color: '#ffffff',
+      connectParticles: false
     });
+
+    const strings = ['Mikhail', 'Misha', 'Michael'];
+
+    const options = {
+      strings: strings,
+      typeSpeed: 120,
+      backSpeed: 70,
+      startDelay: 1000,
+      backDelay: 1000,
+      loop: true,
+      loopCount: Infinity,
+      showCursor: true,
+      cursorChar: '_'
+      // onComplete: (self) => {},
+    };
+
+    this.typed = new Typed('#typed-span', options);
+  }
+  componentWillUnmount() {
+    this.typed.destroy();
   }
   render() {
     return (
@@ -29,6 +55,11 @@ export default class LandingPage extends Component {
         <canvas id="granim-canvas" />
         <div id="particles-js" />
         <canvas id="particles-canvas" />
+        <Col id="intro-text" md={12}>
+          <h1>
+            Hello, my name is <span id="typed-span" />
+          </h1>
+        </Col>
       </div>
     );
   }

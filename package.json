@@ -12,7 +12,8 @@
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.10",
+    "typed.js": "^2.0.5"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
