@@ -76,7 +76,7 @@ export default class LandingPage extends Component {
                 aria-hidden="true"
               />
             </a>
-            <a href="https://docs.google.com/document/d/1ynr0GTDJwIdedinNCh3XagO_JC5OSBo8wOpzt5i5dEM/edit?usp=sharing">
+            <a href="https://drive.google.com/file/d/0ByEhfmA5zD1OTmJEQjFVYTF3eFU/view?usp=sharing">
               <i
                 className="fa fa-handshake-o fa-5x header-icon"
                 aria-hidden="true"
